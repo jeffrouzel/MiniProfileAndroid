@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MiniProfileAndroid</string>
+    <string name="user_name">Jeff Rouzel Bat-og</string>
+    <string name="user_email">jbatog2@77global.biz</string>
+    <string name="user_link">Checkout my Portfolio!</string>
+
+    <string name="label_settings">Account Settings</string>
+    <string name="settings_personalinfo">Personal Information</string>
+    <string name="settings_notif">Notifications</string>
+
+</resources>
