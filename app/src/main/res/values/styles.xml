@@ -7,14 +7,14 @@
 
     <style name="textLabels" parent="Widget.AppCompat.TextView">
         <item name="android:textSize">@dimen/normal_text</item>
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">@color/grey</item>
     </style>
 
     <style name="textInformation" parent="Widget.AppCompat.TextView">
         <item name="android:textSize">@dimen/medium_text</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:paddingTop">@dimen/small_space</item>
-        <item name="android:paddingBottom">@dimen/small_space</item>
+        <item name="android:paddingBottom">@dimen/normal_space</item>
         <item name="android:paddingStart">@dimen/normal_space</item>
         <item name="android:paddingEnd">@dimen/normal_space</item>
     </style>
@@ -26,4 +26,20 @@
         <item name="android:backgroundTint">@color/white</item>
     </style>
 
+    <style name="buttonSeeinfo" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/big_text</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <style name="buttonEdit" parent="Widget.AppCompat.Button">
+        <item name="android:buttonCornerRadius">@dimen/medium_space</item>
+    </style>
+
+    <style name="buttonLogout" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/normal_text</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:paddingHorizontal">@dimen/big_text</item>
+    </style>
 </resources>
