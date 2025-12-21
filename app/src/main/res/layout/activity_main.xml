@@ -100,10 +100,11 @@
     <Button
         android:id="@+id/seeInfo1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/no_space"
         android:text="@string/show_info"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/labelInfo1"
+        app:layout_constraintBottom_toBottomOf="@id/labelInfo1"
         style="@style/buttonSeeinfo"/>
 
     <TextView
@@ -120,10 +121,11 @@
     <Button
         android:id="@+id/seeInfo2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/no_space"
         android:text="@string/show_info"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/labelInfo2"
+        app:layout_constraintBottom_toBottomOf="@id/labelInfo2"
         style="@style/buttonSeeinfo"/>
 
     <TextView
@@ -140,10 +142,11 @@
     <Button
         android:id="@+id/seeInfo3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/no_space"
         android:text="@string/show_info"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/labelInfo3"
+        app:layout_constraintBottom_toBottomOf="@id/labelInfo3"
         style="@style/buttonSeeinfo"/>
 
     <TextView
@@ -160,10 +163,11 @@
     <Button
         android:id="@+id/seeInfo4"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/no_space"
         android:text="@string/show_info"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/labelInfo4"
+        app:layout_constraintBottom_toBottomOf="@id/labelInfo4"
         style="@style/buttonSeeinfo"/>
 
     <TextView
@@ -190,10 +194,11 @@
     <Button
         android:id="@+id/seeInfo5"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/no_space"
         android:text="@string/show_info"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/labelInfo5"
+        app:layout_constraintBottom_toBottomOf="@id/labelInfo5"
         style="@style/buttonSeeinfo"/>
 
     <TextView
@@ -210,10 +215,11 @@
     <Button
         android:id="@+id/seeInfo6"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/no_space"
         android:text="@string/show_info"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/labelInfo6"
+        app:layout_constraintBottom_toBottomOf="@id/labelInfo6"
         style="@style/buttonSeeinfo"/>
 
     <TextView
@@ -230,10 +236,11 @@
     <Button
         android:id="@+id/seeInfo7"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/no_space"
         android:text="@string/show_info"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/labelInfo7"
+        app:layout_constraintBottom_toBottomOf="@id/labelInfo7"
         style="@style/buttonSeeinfo"/>
 
     <Button
