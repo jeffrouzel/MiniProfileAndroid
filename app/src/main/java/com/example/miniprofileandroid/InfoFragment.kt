@@ -8,6 +8,14 @@ import android.view.ViewGroup
 import android.widget.TextView
 
 class InfoFragment : Fragment(R.layout.fragment_info) {
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.fragment_info, container, false)
+    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

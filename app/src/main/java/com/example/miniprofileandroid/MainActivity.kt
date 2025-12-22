@@ -1,8 +1,6 @@
 package com.example.miniprofileandroid
 
-import android.icu.text.IDNA
 import android.os.Bundle
-import android.widget.Toast
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
@@ -31,11 +29,11 @@ class MainActivity : AppCompatActivity()  {
         }
     }
     private fun openInfoFragment(message:String){
-        val fragment = InfoFragment().apply{
-            arguments = Bundle().apply{
+        val fragment = InfoFragment()
+            fragment.arguments = Bundle().apply{
                 putString("message", message)
             }
-        }
+
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragmentContainer, fragment)
             .addToBackStack(null)
