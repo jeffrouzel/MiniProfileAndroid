@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity()  {
                 openInfoFragment(message)
             }
         }
+
     }
     private fun openInfoFragment(message:String){
         val fragment = InfoFragment()

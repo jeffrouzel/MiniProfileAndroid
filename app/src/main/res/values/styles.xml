@@ -42,4 +42,10 @@
         <item name="android:backgroundTint">@color/white</item>
         <item name="android:paddingHorizontal">@dimen/big_text</item>
     </style>
+
+    <style name="buttonBack" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/big_text</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:paddingHorizontal">@dimen/big_text</item>
+    </style>
 </resources>
