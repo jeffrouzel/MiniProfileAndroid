@@ -6,18 +6,21 @@
     <string name="user_link">Checkout my Portfolio!</string>
 
     <string name="label_settings">Account Settings</string>
+    <string name="label_helpsupport">Help and Support</string>
+
+    <string name="button_logout">Logout</string>
+    <string name="button_Back">&lt;-</string>
+
+    <string name="content_profile">User Profile</string>
+
     <string name="settings_personalinfo">Personal Information</string>
     <string name="settings_notif">Notifications</string>
     <string name="settings_time">Time Spent</string>
     <string name="settings_following">Following</string>
 
-    <string name="label_helpsupport">Help and Support</string>
     <string name="hs_privpol">Privacy Policy</string>
     <string name="hs_TsaCs">Terms and Conditions</string>
     <string name="hs_faq">FAQ and Help</string>
 
-    <string name="show_info">&gt;</string>
-    <string name="edit">✏️</string>
-    <string name="label_logout">Logout</string>
-
+    <string name="placeholder">Lorem ipsum</string>
 </resources>
