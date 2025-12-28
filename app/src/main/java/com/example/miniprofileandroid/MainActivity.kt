@@ -12,7 +12,8 @@ class MainActivity : AppCompatActivity()  {
         setContentView(R.layout.activity_main)
 
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNavigation)
-        openInfoFragment("Welcome!!")
+
+        openInfoFragment("Welcome!! \n Press back to continue")
 
         bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId){
@@ -41,7 +42,6 @@ class MainActivity : AppCompatActivity()  {
                 openInfoFragment(message)
             }
         }
-
     }
     private fun openInfoFragment(message:String){
         val fragment = InfoFragment()
