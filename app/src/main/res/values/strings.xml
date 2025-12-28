@@ -17,10 +17,11 @@
     <string name="settings_notif">Notifications</string>
     <string name="settings_time">Time Spent</string>
     <string name="settings_following">Following</string>
-
     <string name="hs_privpol">Privacy Policy</string>
     <string name="hs_TsaCs">Terms and Conditions</string>
     <string name="hs_faq">FAQ and Help</string>
 
+    <string name="msg_personinfo">Ayon Pogi</string>
     <string name="placeholder">Lorem ipsum</string>
+
 </resources>
