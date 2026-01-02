@@ -3,6 +3,8 @@ package com.example.miniprofileandroid
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
@@ -10,6 +12,35 @@ class MainActivity : AppCompatActivity()  {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val recyclerView1 = findViewById<RecyclerView>(R.id.recyclerSettings)
+        val recyclerView2 = findViewById<RecyclerView>(R.id.recyclerHaS)
+        recyclerView1.layoutManager = LinearLayoutManager(this)
+        recyclerView2.layoutManager = LinearLayoutManager(this)
+
+        val infolbl_1 = listOf("Personal Information", "Notifications", "Time Spent", "Following")
+        val infolbl_2 = listOf("Privacy Policy", "Terms and Conditions", "FAQ and Help")
+
+        recyclerView1.adapter = MyAdapter(infolbl_1) { clickedItem ->
+            val message = when (clickedItem) {
+                "Personal Information" -> "Ayon Pogi"
+                "Notifications" -> "Walang notif"
+                "Time Spent" -> "9 hrs?"
+                "Following" -> "not a stalker, 0 following"
+                else -> ""
+            }
+            openInfoFragment(message)
+        }
+
+        recyclerView2.adapter = MyAdapter(infolbl_2) { clickedItem ->
+            val message = when (clickedItem) {
+                "Privacy Policy" -> "Very Private"
+                "Terms and Conditions" -> "Too long to read"
+                "FAQ and Help" -> "Help ME!!!!"
+                else -> ""
+            }
+            openInfoFragment(message)
+        }
 
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNavigation)
 
@@ -27,13 +58,6 @@ class MainActivity : AppCompatActivity()  {
 
         val buttonMessages = mapOf(
             R.id.linkbutton to "No Uploaded Portfolio yet",
-            R.id.seeInfo1 to "Ayon Pogi",
-            R.id.seeInfo2 to "Walang notif",
-            R.id.seeInfo3 to "9 hrs?",
-            R.id.seeInfo4 to "not a stalker, 0 following",
-            R.id.seeInfo5 to "Very Private",
-            R.id.seeInfo6 to "Too long to read",
-            R.id.seeInfo7 to "Help ME!!!!",
             R.id.logout to "Exiting",
         )
 

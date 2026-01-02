@@ -7,7 +7,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="@dimen/no_space"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -34,7 +36,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginTop="@dimen/big_space2"
                 android:contentDescription="@string/user_icon"
-                android:src="@drawable/user_icon"
+                android:foreground="@drawable/user_icon"
                 android:background="@drawable/rounded"
                 android:clipToOutline="true"/>
 
@@ -94,162 +96,35 @@
                 android:layout_marginTop="@dimen/normal_space"
                 style="@style/textLabels"/>
 
-            <TextView
-                android:id="@+id/labelInfo1"
-                style="@style/textInformation"
-                android:layout_width="@dimen/no_space"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerSettings"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/settings_personalinfo"
-                app:layout_constraintEnd_toStartOf="@+id/seeInfo1"
+                app:layout_constraintTop_toBottomOf="@id/labelSettings"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/labelSettings"
-                android:layout_marginTop="@dimen/normal_space"/>
-
-            <Button
-                android:id="@+id/seeInfo1"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/no_space"
-                android:foreground="@drawable/arrow_right"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/labelInfo1"
-                app:layout_constraintBottom_toBottomOf="@id/labelInfo1"
-                style="@style/buttonSeeinfo"/>
-
-            <TextView
-                android:id="@+id/labelInfo2"
-                style="@style/textInformation"
-                android:layout_width="@dimen/no_space"
-                android:layout_height="wrap_content"
-                android:text="@string/settings_notif"
-                app:layout_constraintEnd_toStartOf="@+id/seeInfo2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/labelInfo1"
-                android:layout_marginTop="@dimen/small_space"/>
-
-            <Button
-                android:id="@+id/seeInfo2"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/no_space"
-                android:foreground="@drawable/arrow_right"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/labelInfo2"
-                app:layout_constraintBottom_toBottomOf="@id/labelInfo2"
-                style="@style/buttonSeeinfo"/>
-
-            <TextView
-                android:id="@+id/labelInfo3"
-                style="@style/textInformation"
-                android:layout_width="@dimen/no_space"
-                android:layout_height="wrap_content"
-                android:text="@string/settings_time"
-                app:layout_constraintEnd_toStartOf="@+id/seeInfo3"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/labelInfo2"
-                android:layout_marginTop="@dimen/small_space"/>
-
-            <Button
-                android:id="@+id/seeInfo3"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/no_space"
-                android:foreground="@drawable/arrow_right"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/labelInfo3"
-                app:layout_constraintBottom_toBottomOf="@id/labelInfo3"
-                style="@style/buttonSeeinfo"/>
-
-            <TextView
-                android:id="@+id/labelInfo4"
-                style="@style/textInformation"
-                android:layout_width="@dimen/no_space"
-                android:layout_height="wrap_content"
-                android:text="@string/settings_following"
-                app:layout_constraintEnd_toStartOf="@+id/seeInfo4"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/labelInfo3"
-                android:layout_marginTop="@dimen/small_space"/>
-
-            <Button
-                android:id="@+id/seeInfo4"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/no_space"
-                android:foreground="@drawable/arrow_right"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/labelInfo4"
-                app:layout_constraintBottom_toBottomOf="@id/labelInfo4"
-                style="@style/buttonSeeinfo"/>
+                android:layout_marginTop="@dimen/normal_space"
+                />
 
             <TextView
                 android:id="@+id/HaS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/label_settings"
+                android:text="@string/label_helpsupport"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/labelInfo4"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerSettings"
                 android:layout_marginTop="@dimen/big_space"
                 style="@style/textLabels"/>
 
-            <TextView
-                android:id="@+id/labelInfo5"
-                style="@style/textInformation"
-                android:layout_width="@dimen/no_space"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerHaS"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/hs_privpol"
-                app:layout_constraintEnd_toStartOf="@+id/seeInfo5"
+                app:layout_constraintTop_toBottomOf="@id/HaS"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/HaS"
-                android:layout_marginTop="@dimen/normal_space"/>
-
-            <Button
-                android:id="@+id/seeInfo5"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/no_space"
-                android:foreground="@drawable/arrow_right"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/labelInfo5"
-                app:layout_constraintBottom_toBottomOf="@id/labelInfo5"
-                style="@style/buttonSeeinfo"/>
-
-            <TextView
-                android:id="@+id/labelInfo6"
-                style="@style/textInformation"
-                android:layout_width="@dimen/no_space"
-                android:layout_height="wrap_content"
-                android:text="@string/hs_TsaCs"
-                app:layout_constraintEnd_toStartOf="@+id/seeInfo6"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/labelInfo5"
-                android:layout_marginTop="@dimen/small_space"/>
-
-            <Button
-                android:id="@+id/seeInfo6"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/no_space"
-                android:foreground="@drawable/arrow_right"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/labelInfo6"
-                app:layout_constraintBottom_toBottomOf="@id/labelInfo6"
-                style="@style/buttonSeeinfo"/>
-
-            <TextView
-                android:id="@+id/labelInfo7"
-                style="@style/textInformation"
-                android:layout_width="@dimen/no_space"
-                android:layout_height="wrap_content"
-                android:text="@string/hs_faq"
-                app:layout_constraintEnd_toStartOf="@+id/seeInfo7"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/labelInfo6"
-                android:layout_marginTop="@dimen/small_space"/>
-
-            <Button
-                android:id="@+id/seeInfo7"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/no_space"
-                android:foreground="@drawable/arrow_right"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/labelInfo7"
-                app:layout_constraintBottom_toBottomOf="@id/labelInfo7"
-                style="@style/buttonSeeinfo"/>
+                android:layout_marginTop="@dimen/normal_space"
+                />
 
             <Button
                 android:id="@+id/logout"
@@ -257,7 +132,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/button_logout"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/labelInfo7"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerHaS"
                 style="@style/buttonLogout"
                 android:layout_marginTop="@dimen/normal_space"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -267,7 +142,7 @@
     <FrameLayout
         android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="@dimen/no_space"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
